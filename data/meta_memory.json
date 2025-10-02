@@ -1,0 +1,2502 @@
+[
+  {
+    "problem_features": {
+      "length": 108,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "09d7beec",
+      "complexity_score": 11.75
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.24258303642273,
+      "population_size": 14.925471067428589,
+      "mutation_rate": 0.43087126016616817,
+      "crossover_rate": 0.6619011640548706
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 79,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "b67c9e6b",
+      "complexity_score": 8.950000000000001
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.933168411254883,
+      "population_size": 14.293391346931458,
+      "mutation_rate": 0.42115043401718144,
+      "crossover_rate": 0.6430205583572388
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 111,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "820f5d4d",
+      "complexity_score": 12.450000000000001
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.310283422470093,
+      "population_size": 14.923926651477814,
+      "mutation_rate": 0.429971969127655,
+      "crossover_rate": 0.664255928993225
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 71,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "d7676ef1",
+      "complexity_score": 8.05
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.68294906616211,
+      "population_size": 14.271060347557068,
+      "mutation_rate": 0.4283246278762818,
+      "crossover_rate": 0.6291774988174439
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 83,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "301407c2",
+      "complexity_score": 9.05
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.320180416107178,
+      "population_size": 14.857654094696045,
+      "mutation_rate": 0.4449080109596253,
+      "crossover_rate": 0.6485186576843261
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 128,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "1374cb7d",
+      "complexity_score": 13.8
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7803097238143285,
+      "final_score": 0.17200000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.730919599533081,
+      "population_size": 15.16449773311615,
+      "mutation_rate": 0.4444535732269287,
+      "crossover_rate": 0.6630727887153625
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 96,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "44ee1822",
+      "complexity_score": 11.100000000000001
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.04453158378601,
+      "population_size": 14.83894032239914,
+      "mutation_rate": 0.4355717778205872,
+      "crossover_rate": 0.6523259997367858
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 76,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": true,
+      "keyword_hash": "80bd718b",
+      "complexity_score": 8.95
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.86659026145935,
+      "population_size": 14.81958818435669,
+      "mutation_rate": 0.4567378759384155,
+      "crossover_rate": 0.6468689560890197
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 36,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "76f912dd",
+      "complexity_score": 4.45
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.46193790435791,
+      "population_size": 14.361827909946442,
+      "mutation_rate": 0.42640570402145384,
+      "crossover_rate": 0.6405442357063293
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 67,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "17c99dd5",
+      "complexity_score": 7.4
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.522010803222656,
+      "population_size": 14.289016127586365,
+      "mutation_rate": 0.43269770145416264,
+      "crossover_rate": 0.6208558917045592
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 53,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "024b616e",
+      "complexity_score": 6.4
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.713627099990845,
+      "population_size": 14.459531664848328,
+      "mutation_rate": 0.42635577917099,
+      "crossover_rate": 0.6487433195114136
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 37,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "713e5161",
+      "complexity_score": 4.5
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.455413341522217,
+      "population_size": 14.379904925823212,
+      "mutation_rate": 0.42705976963043213,
+      "crossover_rate": 0.6399242162704468
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 72,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "195495a8",
+      "complexity_score": 7.75
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7803097238143285,
+      "final_score": 0.9720000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.144341230392456,
+      "population_size": 14.803710579872131,
+      "mutation_rate": 0.4472450017929077,
+      "crossover_rate": 0.6408889889717102
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 87,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "e6a3450c",
+      "complexity_score": 9.950000000000001
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.95742416381836,
+      "population_size": 14.775716364383698,
+      "mutation_rate": 0.4342841029167175,
+      "crossover_rate": 0.650807011127472
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 36,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "9329782f",
+      "complexity_score": 4.5
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.240742206573486,
+      "population_size": 14.484104990959167,
+      "mutation_rate": 0.435027825832367,
+      "crossover_rate": 0.6270804762840271
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 85,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": true,
+      "keyword_hash": "94157290",
+      "complexity_score": 9.950000000000001
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.157119274139404,
+      "population_size": 14.805415391921997,
+      "mutation_rate": 0.44825826883316044,
+      "crossover_rate": 0.6587263584136962
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 80,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "9d0c5ece",
+      "complexity_score": 9.0
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.902873754501343,
+      "population_size": 14.721667170524597,
+      "mutation_rate": 0.4324103474617005,
+      "crossover_rate": 0.6506539463996888
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 100,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "8d246e25",
+      "complexity_score": 11.0
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7365688860416413,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.514081954956055,
+      "population_size": 14.963888347148895,
+      "mutation_rate": 0.4439140558242798,
+      "crossover_rate": 0.6558450937271119
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 92,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "efc70260",
+      "complexity_score": 10.100000000000001
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7365688860416413,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.224935531616211,
+      "population_size": 14.979260623455048,
+      "mutation_rate": 0.4547715306282043,
+      "crossover_rate": 0.638629925251007
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 45,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "16240860",
+      "complexity_score": 5.3999999999999995
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.481715440750122,
+      "population_size": 14.471479833126068,
+      "mutation_rate": 0.43067935705184934,
+      "crossover_rate": 0.6382282733917236
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 89,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "af295b75",
+      "complexity_score": 9.850000000000001
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7365688860416413,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.8112051486969,
+      "population_size": 14.502921223640442,
+      "mutation_rate": 0.4396572828292846,
+      "crossover_rate": 0.6286367654800415
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 70,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "3077febd",
+      "complexity_score": 7.8999999999999995
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.22733759880066,
+      "population_size": 14.316683650016785,
+      "mutation_rate": 0.4231410622596741,
+      "crossover_rate": 0.6295050144195556
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 88,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "9d170aba",
+      "complexity_score": 10.000000000000002
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7365688860416413,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.959716558456421,
+      "population_size": 14.403977751731873,
+      "mutation_rate": 0.4303410410881042,
+      "crossover_rate": 0.63910471200943
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 34,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "b375ba05",
+      "complexity_score": 4.25
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 9.854141473770142,
+      "population_size": 13.726765036582947,
+      "mutation_rate": 0.41917825937271114,
+      "crossover_rate": 0.6028061628341674
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 83,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "d7d30520",
+      "complexity_score": 9.650000000000002
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7803097238143285,
+      "final_score": 0.17200000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.84620976448059,
+      "population_size": 14.40673291683197,
+      "mutation_rate": 0.43534421920776367,
+      "crossover_rate": 0.6319787263870239
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 75,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": true,
+      "keyword_hash": "fdf38e2a",
+      "complexity_score": 9.15
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.44120192527771,
+      "population_size": 14.33184403181076,
+      "mutation_rate": 0.440171730518341,
+      "crossover_rate": 0.6389069080352783
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 23,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "294e6721",
+      "complexity_score": 2.75
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7803097238143285,
+      "final_score": 0.17200000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.174510955810547,
+      "population_size": 14.129935383796692,
+      "mutation_rate": 0.4371787786483765,
+      "crossover_rate": 0.6087668180465697
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 82,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": true,
+      "keyword_hash": "36ed5550",
+      "complexity_score": 9.500000000000002
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.461350679397583,
+      "population_size": 14.410111963748932,
+      "mutation_rate": 0.4417430400848389,
+      "crossover_rate": 0.6390570759773254
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 89,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "d8aa3d51",
+      "complexity_score": 10.1
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.630149602890015,
+      "population_size": 14.283852338790894,
+      "mutation_rate": 0.4119850039482117,
+      "crossover_rate": 0.6480978727340698
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 120,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "afafa259",
+      "complexity_score": 13.350000000000001
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.126677989959717,
+      "population_size": 14.632106065750122,
+      "mutation_rate": 0.435390031337738,
+      "crossover_rate": 0.6413244366645813
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 71,
+      "has_math": false,
+      "has_logic": false,
+      "has_comparison": true,
+      "keyword_hash": "933743ce",
+      "complexity_score": 7.800000000000001
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7365688860416413,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.706702709197998,
+      "population_size": 13.930922985076904,
+      "mutation_rate": 0.45642087459564207,
+      "crossover_rate": 0.6159898281097411
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 80,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "e7c9eeb0",
+      "complexity_score": 9.15
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.529921531677246,
+      "population_size": 14.236396551132202,
+      "mutation_rate": 0.4127986431121826,
+      "crossover_rate": 0.6448145985603333
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 118,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": true,
+      "keyword_hash": "89835016",
+      "complexity_score": 13.900000000000002
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.917441368103027,
+      "population_size": 14.493403136730194,
+      "mutation_rate": 0.4348111391067505,
+      "crossover_rate": 0.6515044569969177
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 32,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "a5a55a9c",
+      "complexity_score": 3.75
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 9.826142430305481,
+      "population_size": 13.728533148765564,
+      "mutation_rate": 0.4186320543289185,
+      "crossover_rate": 0.6026957631111145
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 66,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "a8194168",
+      "complexity_score": 7.65
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.41627025604248,
+      "population_size": 14.139207243919373,
+      "mutation_rate": 0.41136323213577275,
+      "crossover_rate": 0.6426644682884216
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 101,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "ac5b7c63",
+      "complexity_score": 10.900000000000002
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.632730960845947,
+      "population_size": 14.108241140842438,
+      "mutation_rate": 0.41121120452880855,
+      "crossover_rate": 0.6344560503959655
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 88,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "d0281823",
+      "complexity_score": 9.9
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.615230798721313,
+      "population_size": 14.284050285816193,
+      "mutation_rate": 0.4120562434196472,
+      "crossover_rate": 0.6477372407913208
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 109,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "416389d3",
+      "complexity_score": 12.2
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.825584650039673,
+      "population_size": 14.404876291751862,
+      "mutation_rate": 0.41082990169525146,
+      "crossover_rate": 0.6539193034172057
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 123,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "68e83484",
+      "complexity_score": 13.5
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.955427169799805,
+      "population_size": 14.49825793504715,
+      "mutation_rate": 0.4092988967895508,
+      "crossover_rate": 0.6582346558570862
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 73,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "3a9933ae",
+      "complexity_score": 8.5
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.51858115196228,
+      "population_size": 14.158122181892395,
+      "mutation_rate": 0.40996336936950684,
+      "crossover_rate": 0.6464309692382812
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 41,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "46b45ad2",
+      "complexity_score": 4.8500000000000005
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.24327564239502,
+      "population_size": 14.755994081497192,
+      "mutation_rate": 0.430804455280304,
+      "crossover_rate": 0.6317713737487793
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 75,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "b3bdc702",
+      "complexity_score": 8.9
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.720226764678955,
+      "population_size": 14.972430109977722,
+      "mutation_rate": 0.430488383769989,
+      "crossover_rate": 0.646970522403717
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 110,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "14df71b8",
+      "complexity_score": 12.1
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.185288190841675,
+      "population_size": 15.23993968963623,
+      "mutation_rate": 0.4251894116401672,
+      "crossover_rate": 0.6641129136085511
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 129,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "f262820b",
+      "complexity_score": 15.05
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7803097238143285,
+      "final_score": 0.9720000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.628074407577515,
+      "population_size": 15.36430299282074,
+      "mutation_rate": 0.4459956645965576,
+      "crossover_rate": 0.6574572801589966
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 67,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "0392fae0",
+      "complexity_score": 8.25
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.804692029953003,
+      "population_size": 14.840531945228577,
+      "mutation_rate": 0.42261559963226314,
+      "crossover_rate": 0.654969584941864
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 12,
+      "has_math": false,
+      "has_logic": false,
+      "has_comparison": true,
+      "keyword_hash": "d6ad49f7",
+      "complexity_score": 1.6500000000000004
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7365688860416413,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.031939029693604,
+      "population_size": 14.175120949745178,
+      "mutation_rate": 0.4755234599113465,
+      "crossover_rate": 0.5810794472694396
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 23,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "f9c6fd24",
+      "complexity_score": 3.0500000000000003
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.197710990905762,
+      "population_size": 14.536472976207733,
+      "mutation_rate": 0.422377598285675,
+      "crossover_rate": 0.6359038710594177
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 90,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "5eec5b4a",
+      "complexity_score": 9.95
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.827131748199463,
+      "population_size": 15.127006888389587,
+      "mutation_rate": 0.43237276077270503,
+      "crossover_rate": 0.6493320465087891
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 23,
+      "has_math": false,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "b0f7d0f6",
+      "complexity_score": 2.6000000000000005
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7365688860416413,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.278598546981812,
+      "population_size": 14.143182277679443,
+      "mutation_rate": 0.44646161794662476,
+      "crossover_rate": 0.59459930062294
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 41,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": true,
+      "keyword_hash": "23af1000",
+      "complexity_score": 5.2
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.405652284622192,
+      "population_size": 14.866238236427307,
+      "mutation_rate": 0.4486567735671997,
+      "crossover_rate": 0.6394057631492615
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 26,
+      "has_math": false,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "b7eb72bb",
+      "complexity_score": 2.85
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7803097238143285,
+      "final_score": 0.17200000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.404929161071777,
+      "population_size": 14.140718400478363,
+      "mutation_rate": 0.44197989702224727,
+      "crossover_rate": 0.6026269912719726
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 94,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "ddde696b",
+      "complexity_score": 10.8
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7365688860416413,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.384740829467773,
+      "population_size": 15.126134634017944,
+      "mutation_rate": 0.4419954895973206,
+      "crossover_rate": 0.6527676343917846
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 130,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "51b103d1",
+      "complexity_score": 14.45
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.286942481994629,
+      "population_size": 15.405567169189453,
+      "mutation_rate": 0.4301979899406433,
+      "crossover_rate": 0.6625344157218933
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 83,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "86477634",
+      "complexity_score": 9.35
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.9007887840271,
+      "population_size": 15.020145535469055,
+      "mutation_rate": 0.42537065744400027,
+      "crossover_rate": 0.6563065409660339
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 127,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "f36bca1a",
+      "complexity_score": 14.25
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.438282012939453,
+      "population_size": 15.332937240600586,
+      "mutation_rate": 0.4206196069717407,
+      "crossover_rate": 0.6733965754508973
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 132,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "f333c695",
+      "complexity_score": 15.200000000000001
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.458229780197144,
+      "population_size": 15.36425256729126,
+      "mutation_rate": 0.4227042913436889,
+      "crossover_rate": 0.671954083442688
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 45,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "e66503f2",
+      "complexity_score": 5.25
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.441198348999023,
+      "population_size": 14.723061919212341,
+      "mutation_rate": 0.4245002269744873,
+      "crossover_rate": 0.6427865624427795
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 105,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "370d07da",
+      "complexity_score": 11.95
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.162543773651123,
+      "population_size": 15.17865765094757,
+      "mutation_rate": 0.42472091913223264,
+      "crossover_rate": 0.6636610507965088
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 39,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "482ae525",
+      "complexity_score": 4.75
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.430658340454102,
+      "population_size": 14.646247208118439,
+      "mutation_rate": 0.4218400478363037,
+      "crossover_rate": 0.6441728711128234
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 105,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "062368b1",
+      "complexity_score": 12.0
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.118305206298828,
+      "population_size": 15.188881158828735,
+      "mutation_rate": 0.42711663246154785,
+      "crossover_rate": 0.660679543018341
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 98,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "5d97d0e0",
+      "complexity_score": 11.1
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.574325323104858,
+      "population_size": 14.41154158115387,
+      "mutation_rate": 0.4199376821517944,
+      "crossover_rate": 0.6409882664680481
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 65,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "d5030b51",
+      "complexity_score": 7.5
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.412453651428223,
+      "population_size": 14.127083659172058,
+      "mutation_rate": 0.4102106332778931,
+      "crossover_rate": 0.6430313587188721
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 76,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "1144c884",
+      "complexity_score": 8.600000000000001
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.35257887840271,
+      "population_size": 14.30517965555191,
+      "mutation_rate": 0.42054657936096196,
+      "crossover_rate": 0.6350438117980957
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 89,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "c525d980",
+      "complexity_score": 10.45
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.682230234146118,
+      "population_size": 14.234601080417633,
+      "mutation_rate": 0.40825977325439455,
+      "crossover_rate": 0.6509290337562561
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 51,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "2cca55fc",
+      "complexity_score": 6.2
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.134704113006592,
+      "population_size": 14.144880652427673,
+      "mutation_rate": 0.41909682750701904,
+      "crossover_rate": 0.6294604539871216
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 86,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "1e14bd56",
+      "complexity_score": 9.75
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.623239517211914,
+      "population_size": 14.247581899166107,
+      "mutation_rate": 0.40933508872985835,
+      "crossover_rate": 0.6490749835968017
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 35,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "1b58785b",
+      "complexity_score": 4.3999999999999995
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 9.907803177833557,
+      "population_size": 14.123947620391846,
+      "mutation_rate": 0.42207490205764775,
+      "crossover_rate": 0.6209827423095703
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 90,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "9efbaab7",
+      "complexity_score": 10.25
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.490508079528809,
+      "population_size": 14.373218178749084,
+      "mutation_rate": 0.42072020769119267,
+      "crossover_rate": 0.6384001851081849
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 71,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": true,
+      "keyword_hash": "f642d2ae",
+      "complexity_score": 8.5
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.332025289535522,
+      "population_size": 14.373021304607391,
+      "mutation_rate": 0.44582271575927734,
+      "crossover_rate": 0.6348358869552613
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 47,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "68a046af",
+      "complexity_score": 5.3
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7803097238143285,
+      "final_score": 0.17200000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.317132234573364,
+      "population_size": 14.34305191040039,
+      "mutation_rate": 0.4453694224357605,
+      "crossover_rate": 0.6089405179023742
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 61,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "60d52814",
+      "complexity_score": 7.0
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.264822721481323,
+      "population_size": 14.181253015995026,
+      "mutation_rate": 0.41663709878921507,
+      "crossover_rate": 0.6350045442581176
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 96,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "cdce72d9",
+      "complexity_score": 10.8
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.678834915161133,
+      "population_size": 14.331253945827484,
+      "mutation_rate": 0.4114138722419739,
+      "crossover_rate": 0.6490755915641784
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 92,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "84066e84",
+      "complexity_score": 10.200000000000001
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7365688860416413,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.847012281417847,
+      "population_size": 14.508318901062012,
+      "mutation_rate": 0.43820012807846065,
+      "crossover_rate": 0.6303067088127137
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 53,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "faca3e20",
+      "complexity_score": 6.25
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.21898341178894,
+      "population_size": 14.109992623329163,
+      "mutation_rate": 0.4147344470024109,
+      "crossover_rate": 0.6347644686698913
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 89,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "0e247dc0",
+      "complexity_score": 9.9
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.628108263015747,
+      "population_size": 14.285661220550537,
+      "mutation_rate": 0.4102794408798218,
+      "crossover_rate": 0.648720896244049
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 100,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "2cca783d",
+      "complexity_score": 11.8
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.60975193977356,
+      "population_size": 14.395854413509369,
+      "mutation_rate": 0.4201411008834839,
+      "crossover_rate": 0.6412664294242858
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 70,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "3f6ef1bf",
+      "complexity_score": 7.6499999999999995
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.377151489257812,
+      "population_size": 13.839382410049438,
+      "mutation_rate": 0.407420814037323,
+      "crossover_rate": 0.6269491910934448
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 75,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "8879424a",
+      "complexity_score": 8.4
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.315789699554443,
+      "population_size": 14.322141945362091,
+      "mutation_rate": 0.4219663977622986,
+      "crossover_rate": 0.633296799659729
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 33,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "cd3aaf23",
+      "complexity_score": 4.05
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7835141440232595,
+      "final_score": 0.17200000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 9.7765394449234,
+      "population_size": 13.791550040245056,
+      "mutation_rate": 0.42351042032241826,
+      "crossover_rate": 0.5982040822505951
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 40,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "d4b9176d",
+      "complexity_score": 4.949999999999999
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 9.993448257446289,
+      "population_size": 14.116461038589478,
+      "mutation_rate": 0.4202720284461975,
+      "crossover_rate": 0.6246532559394836
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 38,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "7b2620dc",
+      "complexity_score": 4.95
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.258613586425781,
+      "population_size": 14.705865204334259,
+      "mutation_rate": 0.43025621175765993,
+      "crossover_rate": 0.631447720527649
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 28,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "1b3f0cda",
+      "complexity_score": 3.6
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 9.944794416427612,
+      "population_size": 14.227417588233948,
+      "mutation_rate": 0.4302465200424195,
+      "crossover_rate": 0.6015426993370057
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 58,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": true,
+      "keyword_hash": "c74ff2e5",
+      "complexity_score": 7.000000000000001
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.644693613052368,
+      "population_size": 14.978804647922516,
+      "mutation_rate": 0.44747960567474365,
+      "crossover_rate": 0.6466416120529175
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 75,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "88583910",
+      "complexity_score": 8.95
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7365688860416413,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.142453670501709,
+      "population_size": 14.981468617916107,
+      "mutation_rate": 0.4439527869224549,
+      "crossover_rate": 0.6433254361152649
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 42,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "ef9cc0f0",
+      "complexity_score": 5.05
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.306472063064575,
+      "population_size": 14.743801832199097,
+      "mutation_rate": 0.42957968711853023,
+      "crossover_rate": 0.6340448141098023
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 60,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "245631c9",
+      "complexity_score": 6.8999999999999995
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.673755168914795,
+      "population_size": 14.826595187187195,
+      "mutation_rate": 0.42331672906875606,
+      "crossover_rate": 0.6510887861251831
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 101,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "cfa4968f",
+      "complexity_score": 11.4
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.039913177490234,
+      "population_size": 15.164217710494995,
+      "mutation_rate": 0.42796778678894043,
+      "crossover_rate": 0.6578536748886108
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 84,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "82338ffd",
+      "complexity_score": 9.65
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.909532070159912,
+      "population_size": 15.018115639686584,
+      "mutation_rate": 0.42577241659164433,
+      "crossover_rate": 0.6560108542442322
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 104,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": true,
+      "keyword_hash": "aa212e8e",
+      "complexity_score": 12.0
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.235891819000244,
+      "population_size": 15.282185554504395,
+      "mutation_rate": 0.44160835742950444,
+      "crossover_rate": 0.6647796750068664
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 103,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "be2ae4aa",
+      "complexity_score": 12.200000000000001
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.9600000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.133568048477173,
+      "population_size": 15.139156222343445,
+      "mutation_rate": 0.42560594081878667,
+      "crossover_rate": 0.661831533908844
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 81,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "ae823dba",
+      "complexity_score": 9.399999999999999
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.7488534450531,
+      "population_size": 15.028746843338013,
+      "mutation_rate": 0.43200562000274656,
+      "crossover_rate": 0.6462861657142639
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 62,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "5cd33373",
+      "complexity_score": 7.45
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.457036972045898,
+      "population_size": 14.430537521839142,
+      "mutation_rate": 0.4274286270141602,
+      "crossover_rate": 0.6208148002624512
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 89,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "4115f46b",
+      "complexity_score": 9.750000000000002
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.872360944747925,
+      "population_size": 14.679239988327026,
+      "mutation_rate": 0.42029831409454343,
+      "crossover_rate": 0.641364312171936
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 31,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "83d0085e",
+      "complexity_score": 4.3500000000000005
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.092956066131592,
+      "population_size": 14.693459451198578,
+      "mutation_rate": 0.43366851806640627,
+      "crossover_rate": 0.6228410482406617
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 75,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "77b1bd4c",
+      "complexity_score": 8.549999999999999
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.719055266039712,
+      "final_score": 0.9480000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.750462055206299,
+      "population_size": 14.970615327358246,
+      "mutation_rate": 0.42813637256622317,
+      "crossover_rate": 0.6495703339576722
+    },
+    "success": true
+  },
+  {
+    "problem_features": {
+      "length": 19,
+      "has_math": true,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "c037dbc2",
+      "complexity_score": 2.5500000000000003
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7835141440232595,
+      "final_score": 0.17200000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.033732175827026,
+      "population_size": 14.0726637840271,
+      "mutation_rate": 0.42074084281921387,
+      "crossover_rate": 0.6117274045944214
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 107,
+      "has_math": false,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "740004f0",
+      "complexity_score": 11.700000000000001
+    },
+    "graph_metrics": {
+      "nodes": 6,
+      "edges": 7,
+      "density": 0.23333333333333334,
+      "avg_weight": 0.7185442324195589,
+      "final_score": 0.148,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 11.498480796813965,
+      "population_size": 15.216148495674133,
+      "mutation_rate": 0.43888984918594365,
+      "crossover_rate": 0.6594255566596985
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 80,
+      "has_math": true,
+      "has_logic": true,
+      "has_comparison": false,
+      "keyword_hash": "3a05ade5",
+      "complexity_score": 8.85
+    },
+    "graph_metrics": {
+      "nodes": 5,
+      "edges": 5,
+      "density": 0.25,
+      "avg_weight": 0.7382943207025529,
+      "final_score": 0.16000000000000003,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.813561201095581,
+      "population_size": 15.01577889919281,
+      "mutation_rate": 0.42725664377212524,
+      "crossover_rate": 0.6523790717124939
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 14,
+      "has_math": false,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "bdfa314c",
+      "complexity_score": 1.5000000000000002
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7803097238143285,
+      "final_score": 0.17200000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 9.977115035057068,
+      "population_size": 14.156720459461212,
+      "mutation_rate": 0.45508606433868404,
+      "crossover_rate": 0.5766428232192993
+    },
+    "success": false
+  },
+  {
+    "problem_features": {
+      "length": 30,
+      "has_math": false,
+      "has_logic": false,
+      "has_comparison": false,
+      "keyword_hash": "d3822606",
+      "complexity_score": 3.2
+    },
+    "graph_metrics": {
+      "nodes": 4,
+      "edges": 3,
+      "density": 0.25,
+      "avg_weight": 0.7803097238143285,
+      "final_score": 0.17200000000000001,
+      "evolution_generations": 3
+    },
+    "config_used": {
+      "max_generations": 10.484851121902466,
+      "population_size": 14.176446497440338,
+      "mutation_rate": 0.4405217051506043,
+      "crossover_rate": 0.6073845863342284
+    },
+    "success": false
+  }
+]

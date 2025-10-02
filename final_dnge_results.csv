@@ -1,0 +1,97 @@
+id,topic,question,answer,confidence,method,options_count
+0,Spatial reasoning,"You have four rods of different lengths: 8 cm, 5 cm, 12 cm, and 3 cm. You must create a three-dimens...",3,0.9480000000000001,graph_reasoning,5
+1,Lateral thinking,"A woman shoots her husband. Then she holds him underwater for five minutes. Finally, she hangs him. ...",photography,0.75,photography_lateral,5
+2,Classic riddles,You are in a race and you overtake the second person. What position are you in now?,second,0.85,race_position,5
+3,Operation of mechanisms,"In a factory, there are three machines A, B, and C. Machine A polishes items, Machine B engraves the...",True,0.9480000000000001,graph_reasoning,5
+4,Operation of mechanisms,"You have three seemingly identical machines, each with a single button on top. One of the machines i...",True,0.9480000000000001,graph_reasoning,5
+5,Sequence solving,You are presented with a sequence of numbers that represent the number of dots in a series of images...,None,0.17200000000000001,graph_reasoning,5
+6,Optimization of actions and planning,"Alice is planning her work schedule for the week. She has 3 tasks to complete: Task A takes 4 hours,...",5.0,0.9,max_comparison,5
+7,Spatial reasoning,You have a 10x10x10 cube made up of 1x1x1 smaller cubes. The large cube is painted red on all of the...,96,0.88,cube_edge_paint,5
+8,Optimization of actions and planning,Four friends are planning to attend a series of events in a single day. They want to maximize the to...,-11,0.95,direct_arithmetic,5
+9,Classic riddles,A wealthy book collector dies and leaves a will stating that his gold shall be shared among his thre...,False,0.95,even_check,5
+10,Sequence solving,"You're shown a sequence of numbers that appear to be increasing unpredictably: 2, 5, 10, 17, 26. You...",True,0.95,even_check,5
+11,Sequence solving,Imagine you encounter a bizarre sequence of numbers where each number depends on the one before it. ...,113,0.9600000000000001,graph_reasoning,5
+12,Spatial reasoning,"In a room, there are 4 corner tables shaped as quarter-circles. Each table fits perfectly in each co...",16.0,0.9,square,5
+13,Lateral thinking,Emma has been captured and she only has one chance to escape. The kidnapper tells her she can leave ...,None,0.17200000000000001,graph_reasoning,5
+14,Spatial reasoning,Imagine a cube that is painted red on all its faces and is then cut into 27 identical smaller cubes....,True,0.9600000000000001,graph_reasoning,5
+15,Operation of mechanisms,"A new clock has been designed to use a special mechanism where each of the three gears (A, B, and C)...",85.0,0.92,arithmetic_sequence,5
+16,Classic riddles,You arrive at a fork in the road and find a pair of identical twin sisters standing there. One siste...,True,0.9600000000000001,graph_reasoning,5
+17,Lateral thinking,"Alice, Bob, and Charlie are trapped in a room with two doors. One door leads to freedom, but the oth...",None,0.16000000000000003,graph_reasoning,5
+18,Spatial reasoning,Four friends are at corners of a large square field and want to reach the exact center of the field ...,90.0,0.9,addition,5
+19,Spatial reasoning,An ant is located at one corner of a 10 x 10 x 10 cube. It needs to crawl to the diagonally opposite...,True,0.9480000000000001,graph_reasoning,5
+20,Spatial reasoning,"A builder has a set of 5 differently shaped blocks: a cube, a sphere, a pyramid, a cylinder, and a c...",None,0.148,graph_reasoning,5
+21,Spatial reasoning,You have a 4x4x4 cube made up of 64 smaller 1x1x1 cubes. You paint the entire outer surface of the l...,0.0,0.9,min_comparison,5
+22,Operation of mechanisms,"In a factory, there are three machines A, B, and C that are programmed to finish a task in exactly 1...",-1,0.9480000000000001,graph_reasoning,5
+23,Sequence solving,"In a unique sequence, each number is the sum of the 3 previous numbers. The sequence starts with 2, ...",17,0.9600000000000001,graph_reasoning,5
+24,Spatial reasoning,"In a cube-cutting challenge, you have a solid cube made of wood. In each move, you can make a straig...",None,0.16000000000000003,graph_reasoning,5
+25,Logical traps,"In a special logic class, the teacher announces a surprise test will happen during the next week (Mo...",False,0.9720000000000001,graph_reasoning,5
+26,Spatial reasoning,Imagine you have a solid wooden cube that measures 3 units on each side. This cube is painted blue o...,2,0.9600000000000001,graph_reasoning,5
+27,Optimization of actions and planning,"You are planning a small party and you have three types of beverages to choose from: juice, soda, an...",292.3,0.9480000000000001,graph_reasoning,5
+28,Spatial reasoning,"A cube has edges of length 2 cm. If the largest possible cylinder is carved out of this cube, what w...",2.0,0.9,addition,5
+29,Sequence solving,Consider the sequence where each number indicates the position that the digit 2 appears for the firs...,None,0.16000000000000003,graph_reasoning,5
+30,Spatial reasoning,A sculptor is creating a unique set of sculptures by stacking cubes of the same size. He wants to cr...,None,0.16000000000000003,graph_reasoning,5
+31,Spatial reasoning,"Imagine a cube that is formed by 27 smaller identical cubes, making it a 3x3x3 cube. If you remove t...",3.0,0.9,min_comparison,5
+32,Sequence solving,"You are presented with a sequence of numbers: 3, 4, 6, 9, 13, ... What is the next number in the seq...",None,0.17200000000000001,graph_reasoning,5
+33,Optimization of actions and planning,You are the operations manager at a factory producing widgets. You have three machines that can oper...,34,0.9480000000000001,graph_reasoning,5
+34,Spatial reasoning,"In a mystical land, there are three temples, each on top of a hill. The paths to the temples are suc...",True,0.9600000000000001,graph_reasoning,5
+35,Logical traps,"Alice, Bob, and Carol are discussing two different numbers. Alice says 'The number I am thinking of ...",4.0,0.9480000000000001,graph_reasoning,5
+36,Classic riddles,"Two fathers and two sons went fishing. Each of them caught one fish, so they brought home three fish...",3,0.8,family_riddle,5
+37,Optimization of actions and planning,"In an online strategy game, you're tasked with building a new base. You start with 100 resources. Th...",3000,0.9480000000000001,graph_reasoning,5
+38,Spatial reasoning,You are in a room with no windows and only one door. The room is filled with mirrors on all walls. I...,True,0.9720000000000001,graph_reasoning,5
+39,Optimization of actions and planning,Alice has to prepare 3 different types of cookies for an event. The chocolate chip cookies take 15 m...,False,0.95,even_check,5
+40,Operation of mechanisms,Four friends are exploring an ancient temple with a complicated door mechanism. The door has four le...,None,0.148,graph_reasoning,5
+41,Sequence solving,"You are given a sequence of numbers: 2, 6, 18, 54. What would be the next number in the sequence if ...",162.0,0.92,geometric_sequence,5
+42,Spatial reasoning,There is a cube with edges of length 4 units. It is fully painted on all sides and then divided into...,4,0.9480000000000001,graph_reasoning,5
+43,Sequence solving,"Fill in the blank: 1, 4, 9, 16, 25, __. Find the next number in the sequence.",36,0.9,square_sequence,5
+44,Spatial reasoning,"You are in a room with 4 doors, each facing the cardinal directions: North, East, South, and West. E...",True,0.7,room_navigation,5
+45,Lateral thinking,A man is found dead in a field holding a piece of straw. There's nothing else around him except for ...,None,0.17200000000000001,graph_reasoning,5
+46,Operation of mechanisms,"In a factory, there are three machines A, B, and C that are used to create widgets. Machine A create...",None,0.148,graph_reasoning,5
+47,Operation of mechanisms,You are an engineer tasked with designing a gear system consisting of three gears that will fit in a...,True,0.9600000000000001,graph_reasoning,5
+48,Optimization of actions and planning,"You have 12 boxes that look identical and contain identical items, but one box is filled with defect...",12.0,0.9,min_comparison,5
+49,Lateral thinking,"Alice, Bob, and Charlie are trapped on an island with a bridge that can only hold two people at a ti...",True,0.9480000000000001,graph_reasoning,5
+50,Operation of mechanisms,"Alice, Bob, and Charlie are three engineers designing a cog-based mechanism for a clock. The mechani...",154,0.9480000000000001,graph_reasoning,5
+51,Classic riddles,"I have keys but no locks. I have space but no room. You can enter, but you can't go outside. What am...",keyboard,0.8,keyboard_riddle,5
+52,Optimization of actions and planning,"Alice, Bob, and Charlie are three friends who decide to paint a room together. They find that Alice ...",None,0.16000000000000003,graph_reasoning,5
+53,Optimization of actions and planning,"In a tiny village, the baker, the butcher, and the candlestick maker are the only three shops that d...",None,0.148,graph_reasoning,5
+54,Sequence solving,"Consider the following sequence: 2, 6, 12, 20, _. What number should replace the underscore to conti...",None,0.16000000000000003,graph_reasoning,5
+55,Operation of mechanisms,You are presented with three machines. Each machine has two input slots and one output slot. The fir...,23,0.9600000000000001,graph_reasoning,5
+56,Operation of mechanisms,"In a factory, there are three conveyor belts with sensors at their start and end points. Belt A take...",15.0,0.9,addition,5
+57,Optimization of actions and planning,"You have 12 hours to prepare an important report. The report will take 10 hours to write. However, a...",120,0.9480000000000001,graph_reasoning,5
+58,Operation of mechanisms,Jake is trying to fix an old clock. The clock is designed with three gears that interlock. Gear A ha...,-2,0.9480000000000001,graph_reasoning,5
+59,Spatial reasoning,You have been given a challenge to fit a number of 1x1x1 cubes into a larger cube container without ...,1,0.9480000000000001,graph_reasoning,5
+60,Optimization of actions and planning,You are a librarian tasked with organizing a set of 5 books on a single shelf. Every day you need to...,0.05,0.9480000000000001,graph_reasoning,5
+61,Sequence solving,"You are given a sequence of numbers: 8, 11, 14, 17, 20. What is the next number in the sequence?",23.0,0.92,arithmetic_sequence,5
+62,Optimization of actions and planning,You have 15 tasks to complete. Each task takes exactly 7 minutes to complete. You have two assistant...,3.0,0.9,min_comparison,5
+63,Sequence solving,You discover an ancient tablet with a sequence of symbols that appear to have a logical progression:...,None,0.148,graph_reasoning,5
+64,Optimization of actions and planning,"A sales representative has four cities to visit: A, B, C, and D. The distances between cities are as...",True,0.9600000000000001,graph_reasoning,5
+65,Sequence solving,"You discover an ancient book with a series of numbers on a page: 2, 12, 36, 80, 150, __. Alongside t...",0.16666666666666666,0.9480000000000001,graph_reasoning,5
+66,Spatial reasoning,You have a 3x3x3 Rubik's Cube which is scrambled. If you consider a single-layer rotation as one mov...,0,0.9480000000000001,graph_reasoning,5
+67,Operation of mechanisms,"A mechanical combination lock consists of three wheels, each marked with the digits from 0 to 9. Eac...",9,0.9480000000000001,graph_reasoning,5
+68,Optimization of actions and planning,"In a small town, there are four bridges that connect two parts of the town separated by a river. Due...",False,0.9720000000000001,graph_reasoning,5
+69,Classic riddles,"A precious stone, a ring of gold, Yet no one's property it may hold. What am I?",None,0.17200000000000001,graph_reasoning,5
+70,Optimization of actions and planning,You are the new manager of a warehouse that needs to optimize the placement of its items. There are ...,150,0.9480000000000001,graph_reasoning,5
+71,Optimization of actions and planning,"In a tournament, every player played exactly one match against each other player. Each match can res...",220,0.9600000000000001,graph_reasoning,5
+72,Optimization of actions and planning,"Alice, Bob, and Charlie are planning to meet in a coffee shop that is equidistant from their homes. ...",None,0.148,graph_reasoning,5
+73,Classic riddles,A prisoner is told 'If you tell a lie we will hang you; if you tell the truth we will shoot you.' Wh...,None,0.17200000000000001,graph_reasoning,5
+74,Operation of mechanisms,A homeowner wants to design a simple mechanical gate that opens automatically when their car approac...,True,0.9600000000000001,graph_reasoning,5
+75,Spatial reasoning,You are in a magical library with four doors: one on each wall. Each door is painted with symbols. T...,None,0.16000000000000003,graph_reasoning,5
+76,Sequence solving,A sequence starts with the number 1 and each subsequent number is three times the previous number pl...,20,0.9600000000000001,graph_reasoning,5
+77,Lateral thinking,Pete is reading a book. Suddenly he throws the book away and turns on the light. Why did Pete throw ...,None,0.17200000000000001,graph_reasoning,5
+78,Sequence solving,"Find the next number in the following sequence: 3, 4, 6, 9, 13, ... What is the next number and why?",None,0.16000000000000003,graph_reasoning,5
+79,Spatial reasoning,Imagine you have a cube made up of 27 smaller cubes of the same size – a 3x3x3 cube. This large cube...,3.0,0.9480000000000001,graph_reasoning,5
+80,Lateral thinking,A man is found hanging dead from the ceiling in a flooded room. The water is not deep enough to drow...,None,0.17200000000000001,graph_reasoning,5
+81,Spatial reasoning,"Imagine a 3x3x3 Rubik's cube. Each small cube on the surface is colored either red, blue, or green. ...",1.0,0.6,heuristic_min,5
+82,Operation of mechanisms,"In a factory, there are three machines A, B, and C. Machine A can complete an order in 4 hours, Mach...",None,0.16000000000000003,graph_reasoning,5
+83,Optimization of actions and planning,Claire has 4 tasks to complete with varying levels of urgency and duration. Task A must be done befo...,1.3333333333333333,0.9480000000000001,graph_reasoning,5
+84,Lateral thinking,"A woman buys a new pair of shoes, goes to work, and dies. What happened?",None,0.17200000000000001,graph_reasoning,5
+85,Optimization of actions and planning,"Alex, Brenda, and Chloe want to paint a series of three houses, each in a different color: red, gree...",-1,0.9480000000000001,graph_reasoning,5
+86,Optimization of actions and planning,You have an electric car that can travel up to 100 miles on a full charge. You need to reach a desti...,940,0.9480000000000001,graph_reasoning,5
+87,Spatial reasoning,"You are in a room with four doors, each leading to a path that goes in one of the four cardinal dire...",True,0.7,room_navigation,5
+88,Operation of mechanisms,"In a room, there are three machines. Each machine has two modes: blue mode and red mode. Machine 1 c...",None,0.148,graph_reasoning,5
+89,Spatial reasoning,"Imagine a cube that has a number from 1 to 6 on each face, much like a die. If the cube is rolled on...",24,0.9600000000000001,graph_reasoning,5
+90,Sequence solving,"You come across three sequences which follow a specific pattern. The sequences are as follows: 
+Seq...",None,0.148,graph_reasoning,5
+91,Lateral thinking,"In a small village, there is a bizarre rule: Every family must have a pet, but no two neighbors can ...",True,0.9600000000000001,graph_reasoning,5
+92,Optimization of actions and planning,"In a new game, you have been given the task to collect as many apples as possible. There are three t...",8,0.9480000000000001,graph_reasoning,5
+93,Logical traps,"You are presented with two boxes, Box A and Box B. One box contains a reward, and the other contains...",True,0.9600000000000001,graph_reasoning,5
+94,Operation of mechanisms,You are given a system with two gears connected to each other. Gear A has 24 teeth and gear B has 48...,True,0.95,even_check,5
