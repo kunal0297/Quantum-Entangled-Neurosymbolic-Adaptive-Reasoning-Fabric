@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
-"""
-NEURAGRAPH (DNGE) - Dynamic Neurosymbolic Graph Evolution
-Simple CLI Interface for Hackathon Submission
-"""
 
 import sys
 import os
 import pandas as pd
+import numpy as np
+import re
+import time
 import argparse
-import time # Added for tracking training time
+from typing import Dict, Any, List, Tuple, Optional
 
 # Add current directory to path
 sys.path.append(os.getcwd())
@@ -22,7 +21,6 @@ except ImportError:
 
 
 def main():
-    """Simple main entry point for NEURAGRAPH (DNGE)"""
     
     parser = argparse.ArgumentParser(
         description="NEURAGRAPH (DNGE) - Agentic Reasoning System",
@@ -60,9 +58,7 @@ def main():
 
 
 def run_training(train_file: str, model_output_path: str, verbose: bool):
-    """
-    Handles the training process, loading data and calling the system's training method.
-    """
+    
     print("\nTraining Mode")
     print("-" * 20)
     print(f"Input Data: {train_file}")
@@ -76,34 +72,25 @@ def run_training(train_file: str, model_output_path: str, verbose: bool):
         df_train = pd.read_csv(train_file)
         print(f"Loaded {len(df_train)} training samples.")
 
-        # Initialize the system
         dnge = FinalDNGESystem()
         
         start_time = time.time()
         
-        # --- THE CORE TRAINING CALL (Assumed to exist in FinalDNGESystem) ---
         print("Starting system training...")
         dnge.train_system(df_train, verbose=verbose)
-        # --------------------------------------------------------------------
-
+        
         end_time = time.time()
         
-        # --- Save the trained state (Assumed method) ---
         dnge.save_model(model_output_path)
         
         print(f"Training successfully completed in {end_time - start_time:.2f} seconds.")
         print(f"Trained model parameters saved to {model_output_path}")
 
-    except AttributeError:
-        # Catch if train_system or save_model doesn't exist
-        print("CRITICAL ERROR: 'FinalDNGESystem' is missing required methods for training.")
-        print("Please define 'train_system(self, df_train, verbose)' and 'save_model(self, path)' in final_dnge_system.py.")
     except Exception as e:
         print(f"Training failed: {type(e).__name__}: {e}")
         
 
 def run_demo():
-    """Run simple demonstration"""
     
     print("\nDemonstration Mode")
     print("-" * 20)
@@ -149,7 +136,6 @@ def run_demo():
 
 
 def process_questions(input_file: str, output_file: str, verbose: bool = False):
-    """Process questions from input file"""
     
     print(f"\nProcessing Mode")
     print(f"-" * 20)
@@ -157,7 +143,6 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
     print(f"Output: {output_file}")
     
     try:
-        # Load data
         if not os.path.exists(input_file):
             print(f"Error: File '{input_file}' not found")
             return
@@ -165,7 +150,6 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
         df = pd.read_csv(input_file)
         print(f"Loaded: {len(df)} questions")
         
-        # Initialize system
         dnge = FinalDNGESystem()
         
         results = []
@@ -174,11 +158,9 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
         high_confidence_count = 0
         
         for i, row in df.iterrows():
-            # Get question
             if 'problem_statement' in row:
                 question = row['problem_statement']
                 topic = row.get('topic', 'General')
-                # Assuming 'target_answer' is the correct label in the test set
                 expected_answer = row.get('target_answer', 'N/A') 
             elif 'question' in row:
                 question = row['question']  
@@ -201,7 +183,6 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
                 
                 total_confidence += confidence
                 
-                # Check for "success" based on confidence threshold (e.g., > 0.5)
                 if confidence > 0.5:
                     success_count += 1
                 
@@ -219,7 +200,7 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
                     'confidence': confidence,
                     'method': method,
                     'topic': topic,
-                    'expected_answer': expected_answer # Include expected answer for full analysis
+                    'expected_answer': expected_answer
                 })
                 
             except Exception as e:
@@ -236,11 +217,9 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
                     'expected_answer': expected_answer
                 })
         
-        # Save results
         results_df = pd.DataFrame(results)
         results_df.to_csv(output_file, index=False)
         
-        # Summary
         total_questions = len(results_df)
         avg_confidence = total_confidence / total_questions
         success_rate = success_count / total_questions
