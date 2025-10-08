@@ -10,16 +10,20 @@ try:
     import torch
     import torch.nn as nn
     import torch.nn.functional as F
+    TORCH_AVAILABLE = True
 except Exception:
     torch = None
     nn = None
     F = None
+    TORCH_AVAILABLE = False
 
 try:
     from transformers import AutoTokenizer, AutoModel
+    TRANSFORMERS_AVAILABLE = True
 except Exception:
     AutoTokenizer = None
     AutoModel = None
+    TRANSFORMERS_AVAILABLE = False
 
 
 @dataclass
@@ -30,7 +34,7 @@ class Decomposition:
 
 
 class TinyDecompMLP(nn.Module):
-    def __init__(self, input_dim: int = 128, hidden_dim: int = 64, output_dim: int = 4):
+    def __init__(self, input_dim: int = 128, hidden_dim: int = 64, output_dim: int = 5):
         super().__init__()
         self.fc1 = nn.Linear(input_dim, hidden_dim)
         self.fc2 = nn.Linear(hidden_dim, output_dim)
@@ -41,11 +45,20 @@ class TinyDecompMLP(nn.Module):
 
 
 class Decomposer:
+    TOOL_RELIABILITY: Dict[str, float] = {
+        "math_solve": 0.95,
+        "arithmetic": 0.90,
+        "logic_branch": 0.75,
+        "compare": 0.85,
+        "fallback": 0.20,
+    }
+    
     def __init__(self, device: str = "cpu"):
         self.device = device
         self.tokenizer = None
         self.embed_model = None
-        if AutoTokenizer and AutoModel:
+        
+        if TRANSFORMERS_AVAILABLE:
             try:
                 self.tokenizer = AutoTokenizer.from_pretrained("prajjwal1/bert-tiny")
                 self.embed_model = AutoModel.from_pretrained("prajjwal1/bert-tiny")
@@ -55,9 +68,10 @@ class Decomposer:
                 self.embed_model = None
 
         self.mlp = None
-        if torch is not None and nn is not None:
+        if TORCH_AVAILABLE:
             self.mlp = TinyDecompMLP().to(self.device)
             self.mlp.eval()
+            
         self.math_patterns = re.compile(r"(solve|equation|sum|difference|product|ratio|percent|\d+)", re.I)
         self.logic_patterns = re.compile(r"(if|then|implies|all|some|none|true|false|not|and|or)", re.I)
         self.compare_patterns = re.compile(r"(greater|less|more|fewer|compare|which|max|min)", re.I)
@@ -73,6 +87,7 @@ class Decomposer:
             outputs = self.embed_model(**toks)
             vec = outputs.last_hidden_state.mean(dim=1)
             vec = vec.squeeze(0)
+            
             if vec.shape[-1] >= 128:
                 return vec[:128].cpu().tolist()
             out = torch.zeros(128)
@@ -83,7 +98,6 @@ class Decomposer:
         g = nx.DiGraph()
         tokens = self._tokenize(question)
 
-        # Node: input
         g.add_node("input", kind="input", text=question)
 
         has_math = bool(self.math_patterns.search(question))
@@ -102,38 +116,60 @@ class Decomposer:
         if emb is not None:
             hint = emb
 
-        scores = [1.0 if has_math else 0.0, 1.0 if has_logic else 0.0, 1.0 if has_compare else 0.0, 1.0 if has_arith else 0.0]
+        heuristic_scores = [
+            1.0 if has_math else 0.0, 
+            1.0 if has_logic else 0.0, 
+            1.0 if has_compare else 0.0, 
+            1.0 if has_arith else 0.0
+        ]
+        
+        raw_confidence = 0.5 
+        
         if self.mlp is not None and torch is not None:
             with torch.no_grad():
                 x = torch.tensor([hint], dtype=torch.float32)
                 mlp_out = self.mlp(x).cpu().numpy().tolist()[0]
-                scores = [0.7 * s + 0.3 * m for s, m in zip(scores, mlp_out)]
+            
+            mlp_tool_hints = mlp_out[:4]
+            raw_confidence = mlp_out[4]
+            
+            fused_tool_scores = [
+                0.7 * s + 0.3 * m 
+                for s, m in zip(heuristic_scores, mlp_tool_hints)
+            ]
+        else:
+            fused_tool_scores = heuristic_scores
 
         tool_nodes: List[Tuple[str, float]] = []
-        if scores[0] > 0.3:
-            tool_nodes.append(("math_solve", scores[0]))
-        if scores[3] > 0.3 and not any(n == "math_solve" for n, _ in tool_nodes):
-            tool_nodes.append(("arithmetic", scores[3]))
-        if scores[1] > 0.3:
-            tool_nodes.append(("logic_branch", scores[1]))
-        if scores[2] > 0.3:
-            tool_nodes.append(("compare", scores[2]))
+        
+        if fused_tool_scores[0] > 0.3:
+            tool_nodes.append(("math_solve", fused_tool_scores[0]))
+        if fused_tool_scores[3] > 0.3 and not any(n == "math_solve" for n, _ in tool_nodes):
+            tool_nodes.append(("arithmetic", fused_tool_scores[3]))
+        if fused_tool_scores[1] > 0.3:
+            tool_nodes.append(("logic_branch", fused_tool_scores[1]))
+        if fused_tool_scores[2] > 0.3:
+            tool_nodes.append(("compare", fused_tool_scores[2]))
 
         for name, w in tool_nodes:
             g.add_node(name, kind="tool")
             g.add_edge("input", name, weight=float(w))
 
         g.add_node("aggregate", kind="aggregate")
-        g.add_node("verify", kind="verify")
+        
+        g.add_node("verify", kind="verify", raw_confidence=float(raw_confidence)) 
+        
         for name, _ in tool_nodes:
-            g.add_edge(name, "aggregate", weight=0.5)
+            reliability = self.TOOL_RELIABILITY.get(name, 0.5)
+            g.add_edge(name, "aggregate", weight=reliability)
+            
         g.add_edge("aggregate", "verify", weight=1.0)
 
         if not tool_nodes:
-            g.add_node("fallback", kind="tool")
-            g.add_edge("input", "fallback", weight=0.2)
-            g.add_edge("fallback", "aggregate", weight=0.2)
+            fallback_name = "fallback"
+            fallback_reliability = self.TOOL_RELIABILITY.get(fallback_name, 0.2)
+            g.add_node(fallback_name, kind="tool")
+            g.add_edge("input", fallback_name, weight=fallback_reliability)
+            g.add_edge("fallback", "aggregate", weight=fallback_reliability)
 
         return Decomposition(graph=g, intent=intent, tokens=tokens)
-
-
