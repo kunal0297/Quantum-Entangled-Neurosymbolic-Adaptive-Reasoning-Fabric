@@ -12,7 +12,6 @@ def symbolic_numeric_verification(value: Any) -> Tuple[float, str]:
         if value is None:
             return 0.0, "none"
         
-        # Max confidence for definite results
         if isinstance(value, bool):
             return 0.98, "boolean"
         
