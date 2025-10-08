@@ -8,9 +8,18 @@ import sys
 import os
 import pandas as pd
 import argparse
+import time # Added for tracking training time
 
 # Add current directory to path
 sys.path.append(os.getcwd())
+
+# Import FinalDNGESystem here to make it available globally
+try:
+    from final_dnge_system import FinalDNGESystem
+except ImportError:
+    print("Error: Could not import FinalDNGESystem. Ensure final_dnge_system.py exists.")
+    sys.exit(1)
+
 
 def main():
     """Simple main entry point for NEURAGRAPH (DNGE)"""
@@ -21,13 +30,20 @@ def main():
     )
     
     parser.add_argument('--input', '-i', type=str, default='data/test.csv',
-                       help='Input CSV file (default: data/test.csv)')
+                        help='Input CSV file (default: data/test.csv)')
     parser.add_argument('--output', '-o', type=str, default='results.csv',
-                       help='Output CSV file (default: results.csv)')
+                        help='Output CSV file (default: results.csv)')
     parser.add_argument('--demo', action='store_true',
-                       help='Run demonstration')
+                        help='Run demonstration')
     parser.add_argument('--verbose', '-v', action='store_true',
-                       help='Verbose output')
+                        help='Verbose output')
+    
+    # --- NEW TRAINING ARGUMENTS ---
+    parser.add_argument('--train', '-t', type=str,
+                        help='Input CSV file for training (e.g., data/train.csv). Runs training mode.')
+    parser.add_argument('--model-output', type=str, default='final_dnge_system_trained.pth',
+                        help='Path to save the trained model/weights.')
+    # -----------------------------
     
     args = parser.parse_args()
     
@@ -35,10 +51,56 @@ def main():
     print("Agentic Reasoning System for Logic Problem Solving")
     print("-" * 55)
     
-    if args.demo:
+    if args.train:
+        run_training(args.train, args.model_output, args.verbose)
+    elif args.demo:
         run_demo()
     else:
         process_questions(args.input, args.output, args.verbose)
+
+
+def run_training(train_file: str, model_output_path: str, verbose: bool):
+    """
+    Handles the training process, loading data and calling the system's training method.
+    """
+    print("\nTraining Mode")
+    print("-" * 20)
+    print(f"Input Data: {train_file}")
+    print(f"Model Output: {model_output_path}")
+
+    if not os.path.exists(train_file):
+        print(f"Error: Training file '{train_file}' not found.")
+        return
+
+    try:
+        df_train = pd.read_csv(train_file)
+        print(f"Loaded {len(df_train)} training samples.")
+
+        # Initialize the system
+        dnge = FinalDNGESystem()
+        
+        start_time = time.time()
+        
+        # --- THE CORE TRAINING CALL (Assumed to exist in FinalDNGESystem) ---
+        print("Starting system training...")
+        dnge.train_system(df_train, verbose=verbose)
+        # --------------------------------------------------------------------
+
+        end_time = time.time()
+        
+        # --- Save the trained state (Assumed method) ---
+        dnge.save_model(model_output_path)
+        
+        print(f"Training successfully completed in {end_time - start_time:.2f} seconds.")
+        print(f"Trained model parameters saved to {model_output_path}")
+
+    except AttributeError:
+        # Catch if train_system or save_model doesn't exist
+        print("CRITICAL ERROR: 'FinalDNGESystem' is missing required methods for training.")
+        print("Please define 'train_system(self, df_train, verbose)' and 'save_model(self, path)' in final_dnge_system.py.")
+    except Exception as e:
+        print(f"Training failed: {type(e).__name__}: {e}")
+        
 
 def run_demo():
     """Run simple demonstration"""
@@ -54,7 +116,6 @@ def run_demo():
     ]
     
     try:
-        from final_dnge_system import FinalDNGESystem
         dnge = FinalDNGESystem()
         
         correct = 0
@@ -86,6 +147,7 @@ def run_demo():
     except Exception as e:
         print(f"Demo failed: {e}")
 
+
 def process_questions(input_file: str, output_file: str, verbose: bool = False):
     """Process questions from input file"""
     
@@ -104,27 +166,31 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
         print(f"Loaded: {len(df)} questions")
         
         # Initialize system
-        from final_dnge_system import FinalDNGESystem
         dnge = FinalDNGESystem()
         
         results = []
-        high_confidence = 0
+        total_confidence = 0.0
+        success_count = 0
+        high_confidence_count = 0
         
         for i, row in df.iterrows():
             # Get question
             if 'problem_statement' in row:
                 question = row['problem_statement']
                 topic = row.get('topic', 'General')
+                # Assuming 'target_answer' is the correct label in the test set
+                expected_answer = row.get('target_answer', 'N/A') 
             elif 'question' in row:
                 question = row['question']  
                 topic = row.get('topic', 'General')
+                expected_answer = row.get('target_answer', 'N/A')
             else:
                 print("Error: No question column found")
                 return
             
-            if verbose and i < 5:  # Show first 5 in verbose mode
+            if verbose and i < 5:
                 print(f"\nQ{i+1}: {question[:80]}...")
-            elif (i + 1) % 20 == 0:  # Progress every 20 questions
+            elif (i + 1) % 20 == 0:
                 print(f"Progress: {i+1}/{len(df)}")
             
             try:
@@ -133,8 +199,14 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
                 confidence = result['confidence']
                 method = result['method']
                 
+                total_confidence += confidence
+                
+                # Check for "success" based on confidence threshold (e.g., > 0.5)
+                if confidence > 0.5:
+                    success_count += 1
+                
                 if confidence > 0.8:
-                    high_confidence += 1
+                    high_confidence_count += 1
                 
                 if verbose and i < 5:
                     print(f"Answer: {answer}")
@@ -146,7 +218,8 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
                     'answer': dnge.normalize(answer),
                     'confidence': confidence,
                     'method': method,
-                    'topic': topic
+                    'topic': topic,
+                    'expected_answer': expected_answer # Include expected answer for full analysis
                 })
                 
             except Exception as e:
@@ -159,7 +232,8 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
                     'answer': 'ERROR',
                     'confidence': 0.0,
                     'method': 'error',
-                    'topic': topic
+                    'topic': topic,
+                    'expected_answer': expected_answer
                 })
         
         # Save results
@@ -167,13 +241,14 @@ def process_questions(input_file: str, output_file: str, verbose: bool = False):
         results_df.to_csv(output_file, index=False)
         
         # Summary
-        avg_confidence = results_df['confidence'].mean()
-        success_rate = (results_df['confidence'] > 0.5).mean()
-        high_conf_rate = high_confidence / len(results_df)
+        total_questions = len(results_df)
+        avg_confidence = total_confidence / total_questions
+        success_rate = success_count / total_questions
+        high_conf_rate = high_confidence_count / total_questions
         
         print(f"\nResults Summary")
         print(f"-" * 20)
-        print(f"Questions processed: {len(results_df)}")
+        print(f"Questions processed: {total_questions}")
         print(f"Average confidence: {avg_confidence:.3f}")
         print(f"Success rate (>0.5): {success_rate:.1%}")
         print(f"High confidence (>0.8): {high_conf_rate:.1%}")
