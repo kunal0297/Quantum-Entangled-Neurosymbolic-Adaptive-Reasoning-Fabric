@@ -33,7 +33,7 @@ class Decomposition:
     tokens: List[str]
 
 
-# Output dim increased to 6: 5 tool hints + 1 raw confidence score
+# Output dim is 6: 5 tool hints + 1 raw confidence score
 class TinyDecompMLP(nn.Module):
     def __init__(self, input_dim: int = 128, hidden_dim: int = 64, output_dim: int = 6):
         super().__init__()
@@ -46,7 +46,7 @@ class TinyDecompMLP(nn.Module):
 
 
 class Decomposer:
-    # Added 'sequence_solver' for the low-performing Sequences topic
+    # Includes the new specialized tool
     TOOL_RELIABILITY: Dict[str, float] = {
         "math_solve": 0.95,
         "arithmetic": 0.90,
@@ -78,7 +78,6 @@ class Decomposer:
         self.math_patterns = re.compile(r"(solve|equation|sum|difference|product|ratio|percent|\d+)", re.I)
         self.logic_patterns = re.compile(r"(if|then|implies|all|some|none|true|false|not|and|or)", re.I)
         self.compare_patterns = re.compile(r"(greater|less|more|fewer|compare|which|max|min)", re.I)
-        # New pattern for sequences
         self.sequence_patterns = re.compile(r"(sequence|next number|pattern|series|nth term)", re.I)
 
     def _tokenize(self, text: str) -> List[str]:
@@ -109,7 +108,7 @@ class Decomposer:
         has_logic = bool(self.logic_patterns.search(question))
         has_compare = bool(self.compare_patterns.search(question))
         has_arith = bool(re.search(r"(add|subtract|multiply|divide|plus|minus|times|over)", question, re.I))
-        has_sequence = bool(self.sequence_patterns.search(question)) # New pattern check
+        has_sequence = bool(self.sequence_patterns.search(question)) 
 
         intent = "general"
         if has_math:
@@ -142,7 +141,6 @@ class Decomposer:
             mlp_tool_hints = mlp_out[:5]
             raw_confidence = mlp_out[5]
             
-            # Fused scores for tool selection (0.7 Heuristic + 0.3 Neural)
             fused_tool_scores = [
                 0.7 * s + 0.3 * m 
                 for s, m in zip(heuristic_scores, mlp_tool_hints)
@@ -153,7 +151,6 @@ class Decomposer:
         tool_nodes: List[Tuple[str, float]] = []
         
         # Index map: [math, logic, compare, arith, sequence]
-        # Prioritize math_solve (index 0) over arithmetic (index 3)
         if fused_tool_scores[0] > 0.3:
             tool_nodes.append(("math_solve", fused_tool_scores[0]))
         if fused_tool_scores[3] > 0.3 and not any(n == "math_solve" for n, _ in tool_nodes):
@@ -163,19 +160,17 @@ class Decomposer:
         if fused_tool_scores[2] > 0.3:
             tool_nodes.append(("compare", fused_tool_scores[2]))
         if fused_tool_scores[4] > 0.3:
-            tool_nodes.append(("sequence_solver", fused_tool_scores[4])) # Add sequence solver
+            tool_nodes.append(("sequence_solver", fused_tool_scores[4])) 
 
         for name, w in tool_nodes:
-            g.add_node(name, kind="tool")
+            g.add_node(name, kind="tool", tool_type=name) # Added tool_type for GA swap_tool
             g.add_edge("input", name, weight=float(w))
 
         g.add_node("aggregate", kind="aggregate")
         
-        # Pass Raw Confidence to the verify node
         g.add_node("verify", kind="verify", raw_confidence=float(raw_confidence)) 
         
         for name, _ in tool_nodes:
-            # Use Tool Reliability as the weight for the aggregate edge
             reliability = self.TOOL_RELIABILITY.get(name, 0.5)
             g.add_edge(name, "aggregate", weight=reliability)
             
@@ -184,7 +179,7 @@ class Decomposer:
         if not tool_nodes:
             fallback_name = "fallback"
             fallback_reliability = self.TOOL_RELIABILITY.get(fallback_name, 0.2)
-            g.add_node(fallback_name, kind="tool")
+            g.add_node(fallback_name, kind="tool", tool_type=fallback_name)
             g.add_edge("input", fallback_name, weight=fallback_reliability)
             g.add_edge("fallback", "aggregate", weight=fallback_reliability)
 
