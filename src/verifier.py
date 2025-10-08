@@ -12,6 +12,7 @@ def symbolic_numeric_verification(value: Any) -> Tuple[float, str]:
         if value is None:
             return 0.0, "none"
         
+        # Max confidence for definite results
         if isinstance(value, bool):
             return 0.98, "boolean"
         
@@ -51,10 +52,13 @@ def verification_score(g: nx.DiGraph, ctx: Dict[str, Any]) -> Tuple[float, Dict[
 
     complexity = g.number_of_nodes() + g.number_of_edges()
     
-    efficiency = max(0.0, 1.0 - 0.15 * math.log(1 + complexity))
+    # Moderate penalty factor (0.10) to balance complexity and capability
+    efficiency = max(0.0, 1.0 - 0.10 * math.log(1 + complexity))
     
+    # Calibrated Confidence: Higher weight (0.7) on symbolic verification (base_score)
     calibrated_confidence = (base_score * 0.7) + (raw_confidence * 0.3)
     
+    # Final Score: High weight (0.85) on calibrated confidence
     final_score = (calibrated_confidence * 0.85) + (efficiency * 0.15)
     
     final_score = max(0.0, min(1.0, final_score))

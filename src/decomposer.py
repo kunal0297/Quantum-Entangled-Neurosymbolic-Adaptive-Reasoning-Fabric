@@ -33,8 +33,9 @@ class Decomposition:
     tokens: List[str]
 
 
+# Output dim increased to 6: 5 tool hints + 1 raw confidence score
 class TinyDecompMLP(nn.Module):
-    def __init__(self, input_dim: int = 128, hidden_dim: int = 64, output_dim: int = 5):
+    def __init__(self, input_dim: int = 128, hidden_dim: int = 64, output_dim: int = 6):
         super().__init__()
         self.fc1 = nn.Linear(input_dim, hidden_dim)
         self.fc2 = nn.Linear(hidden_dim, output_dim)
@@ -45,11 +46,13 @@ class TinyDecompMLP(nn.Module):
 
 
 class Decomposer:
+    # Added 'sequence_solver' for the low-performing Sequences topic
     TOOL_RELIABILITY: Dict[str, float] = {
         "math_solve": 0.95,
         "arithmetic": 0.90,
         "logic_branch": 0.75,
         "compare": 0.85,
+        "sequence_solver": 0.80, # New specialized tool
         "fallback": 0.20,
     }
     
@@ -75,6 +78,8 @@ class Decomposer:
         self.math_patterns = re.compile(r"(solve|equation|sum|difference|product|ratio|percent|\d+)", re.I)
         self.logic_patterns = re.compile(r"(if|then|implies|all|some|none|true|false|not|and|or)", re.I)
         self.compare_patterns = re.compile(r"(greater|less|more|fewer|compare|which|max|min)", re.I)
+        # New pattern for sequences
+        self.sequence_patterns = re.compile(r"(sequence|next number|pattern|series|nth term)", re.I)
 
     def _tokenize(self, text: str) -> List[str]:
         return re.findall(r"[A-Za-z0-9_]+", text)
@@ -104,6 +109,7 @@ class Decomposer:
         has_logic = bool(self.logic_patterns.search(question))
         has_compare = bool(self.compare_patterns.search(question))
         has_arith = bool(re.search(r"(add|subtract|multiply|divide|plus|minus|times|over)", question, re.I))
+        has_sequence = bool(self.sequence_patterns.search(question)) # New pattern check
 
         intent = "general"
         if has_math:
@@ -116,11 +122,13 @@ class Decomposer:
         if emb is not None:
             hint = emb
 
+        # Initial scores for the 5 tool types: [math, logic, compare, arith, sequence]
         heuristic_scores = [
             1.0 if has_math else 0.0, 
             1.0 if has_logic else 0.0, 
             1.0 if has_compare else 0.0, 
-            1.0 if has_arith else 0.0
+            1.0 if has_arith else 0.0,
+            1.0 if has_sequence else 0.0
         ]
         
         raw_confidence = 0.5 
@@ -130,9 +138,11 @@ class Decomposer:
                 x = torch.tensor([hint], dtype=torch.float32)
                 mlp_out = self.mlp(x).cpu().numpy().tolist()[0]
             
-            mlp_tool_hints = mlp_out[:4]
-            raw_confidence = mlp_out[4]
+            # MLP output is now size 6: 5 tool hints + 1 confidence
+            mlp_tool_hints = mlp_out[:5]
+            raw_confidence = mlp_out[5]
             
+            # Fused scores for tool selection (0.7 Heuristic + 0.3 Neural)
             fused_tool_scores = [
                 0.7 * s + 0.3 * m 
                 for s, m in zip(heuristic_scores, mlp_tool_hints)
@@ -142,6 +152,8 @@ class Decomposer:
 
         tool_nodes: List[Tuple[str, float]] = []
         
+        # Index map: [math, logic, compare, arith, sequence]
+        # Prioritize math_solve (index 0) over arithmetic (index 3)
         if fused_tool_scores[0] > 0.3:
             tool_nodes.append(("math_solve", fused_tool_scores[0]))
         if fused_tool_scores[3] > 0.3 and not any(n == "math_solve" for n, _ in tool_nodes):
@@ -150,6 +162,8 @@ class Decomposer:
             tool_nodes.append(("logic_branch", fused_tool_scores[1]))
         if fused_tool_scores[2] > 0.3:
             tool_nodes.append(("compare", fused_tool_scores[2]))
+        if fused_tool_scores[4] > 0.3:
+            tool_nodes.append(("sequence_solver", fused_tool_scores[4])) # Add sequence solver
 
         for name, w in tool_nodes:
             g.add_node(name, kind="tool")
@@ -157,9 +171,11 @@ class Decomposer:
 
         g.add_node("aggregate", kind="aggregate")
         
+        # Pass Raw Confidence to the verify node
         g.add_node("verify", kind="verify", raw_confidence=float(raw_confidence)) 
         
         for name, _ in tool_nodes:
+            # Use Tool Reliability as the weight for the aggregate edge
             reliability = self.TOOL_RELIABILITY.get(name, 0.5)
             g.add_edge(name, "aggregate", weight=reliability)
             
